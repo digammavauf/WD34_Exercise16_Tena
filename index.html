@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Data Conversion Calculator</title>
+        <link rel="stylesheet" href="css/main.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Data Conversion Calculator</h1>
+            <form class="form-inline col-m">
+                <div class="col-6">
+                    <label class="sr-only" for="bytes">Bytes</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Bytes (B)</span>
+                        </div>
+                        <input id="bytes" class="form-control" placeholder="0" type="number" onkeyup="convert()" onchange="convert()">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <label class="sr-only" for="bits">Bits</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Bits (b)</span>
+                        </div>
+                        <input id="number" class="form-control" placeholder="0" type="number" readonly>
+                    </div>       
+                </div>
+                <div class="col-6">
+                    <label class="sr-only" for="nybbles">Nybbles</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Nybbles (nybl)</span>
+                        </div>
+                        <input id="nybles" name="data" class="form-control" placeholder="0" type="number" readonly>
+                    </div>       
+                </div>
+                <div class="col-6">
+                    <label class="sr-only" for="words">Words</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Words (WORD)</span>
+                        </div>
+                        <input id="words" name="data" class="form-control" placeholder="0" type="number" readonly>
+                    </div>       
+                </div>
+                <div class="col-6">
+                    <label class="sr-only" for="doublewords">Doublewords</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">DoubleWords (DWORD)</span>
+                        </div>
+                        <input id="doublewords" class="form-control" placeholder="0" type="number" readonly>
+                    </div>       
+                </div>
+                <div class="col-6">
+                    <label class="sr-only" for="kilobits">Kilobits</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Kilobits (Kb)</span>
+                        </div>
+                        <input id="kilobits" class="form-control" placeholder="0" type="number" readonly>
+                    </div>       
+                </div>
+                <div class="col-6">
+                    <label class="sr-only" for="kibibits">Kibibits</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Kibibits (Kib)</span>
+                        </div>
+                        <input id="kibibits" class="form-control" placeholder="0" type="number" readonly>
+                    </div>       
+                </div>
+                <div class="col-6">
+                    <label class="sr-only" for="kilobytes">KiloBytes</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">KiloBytes (KB)</span>
+                        </div>
+                        <input id="kilobytes" class="form-control" placeholder="0" type="number" readonly>
+                    </div>       
+                </div>
+                <div class="col-6">
+                    <label class="sr-only" for="kilobytes">KibiBytes</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">KibiBytes (KiB)</span>
+                        </div>
+                        <input id="kibibytes" class="form-control" placeholder="0" type="number" readonly>
+                    </div>       
+                </div>
+            </form>
+        </div>
+        <script src="js/main.js"></script>
+    </body>
+</html>
